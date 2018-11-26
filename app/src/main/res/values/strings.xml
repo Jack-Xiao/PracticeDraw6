@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HenCoder 绘制 6</string>
+    <string name="app_name">View绘制 6</string>
     <string name="title_translation">translationX/Y/Z()</string>
     <string name="title_rotation">rotation/X/Y()</string>
     <string name="title_scale">scaleX/Y()</string>

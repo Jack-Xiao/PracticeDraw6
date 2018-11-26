@@ -56,18 +56,18 @@ public class Practice07Interpolator extends LinearLayout {
         interpolatorPath.lineTo(0.25f, 0.25f);
         interpolatorPath.moveTo(0.25f, 1.5f);
         interpolatorPath.lineTo(1, 1);
-        interpolators[0] = new AccelerateDecelerateInterpolator();
-        interpolators[1] = new LinearInterpolator();
-        interpolators[2] = new AccelerateInterpolator();
-        interpolators[3] = new DecelerateInterpolator();
-        interpolators[4] = new AnticipateInterpolator();
-        interpolators[5] = new OvershootInterpolator();
-        interpolators[6] = new AnticipateOvershootInterpolator();
-        interpolators[7] = new BounceInterpolator();
-        interpolators[8] = new CycleInterpolator(0.5f);
-        interpolators[9] = PathInterpolatorCompat.create(interpolatorPath);
-        interpolators[10] = new FastOutLinearInInterpolator();
-        interpolators[11] = new FastOutSlowInInterpolator();
+        interpolators[0] = new AccelerateDecelerateInterpolator(); // 开始与结束缓慢，中间快速
+        interpolators[1] = new LinearInterpolator();  // 匀速变化
+        interpolators[2] = new AccelerateInterpolator(); //先减速 后加速
+        interpolators[3] = new DecelerateInterpolator(); //先加速 后减速
+        interpolators[4] = new AnticipateInterpolator(); // 先向后 后向前
+        interpolators[5] = new OvershootInterpolator(); // 回弹
+        interpolators[6] = new AnticipateOvershootInterpolator(); // 先向后 后向前 +  回弹
+        interpolators[7] = new BounceInterpolator(); //回弹很多下
+        interpolators[8] = new CycleInterpolator(0.5f); //正玹函数 的重复动画
+        interpolators[9] = PathInterpolatorCompat.create(interpolatorPath); //
+        interpolators[10] = new FastOutLinearInInterpolator(); //
+        interpolators[11] = new FastOutSlowInInterpolator(); //
         interpolators[12] = new LinearOutSlowInInterpolator();
     }
 
